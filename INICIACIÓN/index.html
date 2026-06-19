@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi primera web </title>
+</head>
+
+<body>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input id = "nombre" />
+    </form>
+   
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <hr> linea de separación
+    <p>Mi primer párrafo</p>
+    <p>Mi segundo párrafo y lo usare para <span style = "color:aquamarine">remarcar la etiqueta</span> de (/span)</p>
+    <!-- Este texto es un Comentario -->
+    <p>La etiqueta de (br) nos servira para poder hacer separaciones de texto como esta :<br>que aunque el codigo o texto este en una misma linea en la web se verá en lineas distintas.</p>
+    <p>Ahora veremos la etiqueta de (a) esta etiqueta nos permite navegar siempre que le otorguemos un link de esta manera : <a href="https://www.google.com" target="_blank">Ir a Google</a></p>
+    <p>Pero támbien podemos usarla para crear enlaces que nos lleven a otras páginas en una nueva pestaña. tal que asi : <a href="https://www.youtube.com" target="_blank">Ir a YouTube</a></p>
+    <p>Para mostrar imagnes usamos las etiquetas (img) la qual se puede contener de esta manera (<img/) asi no seria necesario hacer la etiqueta de cierre. <br>
+     Para añadir una imagen seria de esta manera :<br> <img src = "img/Puerta.jpg" with="400px" height ="400px" /></p>
+    <p>Ahora vamos a "interactuar" con el usuario, más bien vamos a recopilar información de el y lo haremos usando una 
+    etiqueta de INPUT que se situará al principio del blog por comodidad mia, dicho esto para poder darle sentido a que dato 
+    queremos recopilar del usuario devemos darle una etiqueta que especifique que información queremos recopilar, esta se llaman : INPUT Y LABEL 
+    La etiqueta de INPUT permitira al usuario escribir la información que le estamos preguntando y la etiqueta de LABEL nos servira para darle un nombre 
+    a esa información que queremos recopilar, por ejemplo :ver en codigo fuente<br>
+   
+    (<label for="nombre">Nombre:</label>).
+   
+    <P>Input también nos sirve para dar "foco" a lo que queramos , pongo un ejemplo :<br>
+    en el curioso caso de que el usuario no "pinche" correctamente sobre el espacio de escritura y le diera <br>
+    al "NOMBRE" de el input, que en este caso concreto el "nomre" = es nombre, tambien nos <br>
+    nos permitiria escribir en el imput devido a la focalización de la palabra.<br>
+    En definitiva si focalizo cualquier palabra me permitira hacer otra acción en otra parte.</P>
+    Se esta haciendo larguito el tema del INPUT JEJE, pero hay más. Tambien se pede poner lo que queremos<br>
+    que nos facilite el usuario dentro de donde se escribe el nombre, de la siguiente forma : <input = "nombre" placeholder= "nombre"><br>
+    (Para ver como se encribe la etiqueta y nomeclatura ver en el codigo fuente)</p>
+    <p>En definitiva, podemos pedir cualquier INFO al usuario teniendo en cuenta que dependiendo de lo que pidamos va haver
+    pequeñas variaciones, como: si pedimos una pasword el texto que este dentro de el INPUT se verá cón asteriscos :</p>
+    
+    <form>
+        <label for="nombre">Contraseña</label>
+        <input type="password"/>
+    </form>
+    
+    <p>De la misma manera podemos usar en Input: Submit, text, email, password, radio, checkbox, file.
+    Si usamos file nos salrdá un boton que al pinchar nos habrirá un sector de archivo para poder selccionar.</p>
+    
+    <form>
+        <label for="CV">cv</label>
+        <input type="file" id="CV"/>
+    </form>
+   
+    <p> Nosotros podemos agragar tantas etiquetas como queramos aen el apartado de form. COMO: </p>
+  
+    <form>
+        <label for="nombre">NOMBRE</label>
+        <input type="text" id="nombre"/>
+        <br>
+        <label for="APELLIDO">APELLIDO</label>
+        <input type="text" id="APELLIDO"/>
+   
+    </form>
+
+ <P>Ahora vamos a usar una nueva etiqueta dentro de form, que en este caso va a ser TEXTAREA<br/>
+    y esta tiene propiedades muy similares a input.</P>
+
+    <form>
+        <textarea rows="10" cals0"50 id="comentario" placeholder="Comentario" ></textarea>
+        <label for="comentario">Comentario</label>
+        <input type="submit" value="enviar"/>
+    </form>
+</body>
+    
+    <p>Una vez echo esto vamos a decirle a nuestro formulario donde deve enviar todas estas resouestas<br>
+    para que sean registradas y lo haremos añadiendo el valor de ACTION, en la etiqueta de form, ACTION <br>
+    contener una ruta dentro de nuestro servidor o cualquier aplicación.
+    Luego debemos añadir method, que es el metodo de envio de la información, pero hay dos variantes<br>
+    GET y POST, GET es un metodo de envio de información que se muestra en la URL, mientras que POST no se muestra en la URL.
+    No hay una mejor o peor form de enviar los datos es algo meramente preferencial por nuestra parte.
+    <br>
+    Nos falta por ver los valores por defecto que podemos asignar a los formularios, para poder hacerlo nos vamos a input <br>
+    y vamos a añadir VALUE y un valor por defecto, pero..., para añadir un valor por defectoa nuestro <br>
+    text area no usaremos VALUE simplemente añadiremos el texto dentro de la etiqueta, como se muestra en el siguiente ejemplo : </P>
+
+<body>
+    <form action="/formulario" method="POST">
+        <label for="nombre">NOMBRE</label>
+        <input value="Culito" type="text" id="nombre" name="nombre" placeholder="cerdito">
+        <br>
+        <label for="APELLIDO">APELLIDO</label>
+        <input value="gordito" type="text" id="APELLIDO" name="APELLIDO" placeholder="Agridulce">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Comentario" name="comentario">cerdito por defecto</textarea>
+        <br>
+        <input type="submit"/>
+    </form>
+ </body>
+
+ <p>Ahora vamos a ver los botones en HTML, eso se debe a que con las estiquetas como las de tipo Submit nosotros <br>
+no podemos agregar etiquetas a dentro entonces ussamos las etiquetas BUTTON, osea si BOTONES jaja, como:</p>
+<P>A esta etiqueta se le pueden pasar 3 valores, el 1r es Buttom, el 2n es Submit y el 3r que es Reset</P>
+
+1r:
+<body>
+    <form action="/formulario" method="POST">
+        <label for="nombre">NOMBRE</label>
+        <input value="Culito" type="text" id="nombre" name="nombre" placeholder="cerdito">
+        <br>
+        <label for="APELLIDO">APELLIDO</label>
+        <input value="gordito" type="text" id="APELLIDO" name="APELLIDO" placeholder="Agridulce">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Comentario" name="comentario">cerdito por defecto</textarea>
+        <br>
+        <button type="button"><img src="img/Puerta.jpg" height="50" width="50"/></button>
+    </form>
+ </body>
+
+<p>Este solo hara que aparezca el boton de enviar pero sin ningun tipo de acción, bueno mejor dicho la acción que deberá hacer se la dará omo orden JavaScript</p>
+<p>Como anecdota en las etiquetas BUTTON, se pueden atderir imagenes./p>
+
+2n:
+ <body>
+    <form action="/formulario" method="POST">
+        <label for="nombre">NOMBRE</label>
+        <input value="Culito" type="text" id="nombre" name="nombre" placeholder="cerdito">
+        <br>
+        <label for="APELLIDO">APELLIDO</label>
+        <input value="gordito" type="text" id="APELLIDO" name="APELLIDO" placeholder="Agridulce">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Comentario" name="comentario">cerdito por defecto</textarea>
+        <br>
+        <button type="reset">ENVIAR</button>
+    </form>
+ </body>
+
+<p>EN el caso del tipo reset, nos encontraremos que todo lo escrito en los campos se borrará o regresaran a los comentarios por defecto.</p>
+
+3r:
+ <body>
+    <form action="/formulario" method="POST">
+        <label for="nombre">NOMBRE</label>
+        <input value="Culito" type="text" id="nombre" name="nombre" placeholder="cerdito">
+        <br>
+        <label for="APELLIDO">APELLIDO</label>
+        <input value="gordito" type="text" id="APELLIDO" name="APELLIDO" placeholder="Agridulce">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Comentario" name="comentario">cerdito por defecto</textarea>
+        <br>
+        <button type="submit">ENVIAR</button>
+    </form>
+ </body>
+
+ <p>Y la tipo SUBMIT enviara el formulario a la ruta especificada en el atributo "action" del formulario.</p>
+ 
+ <p>Ahora vamos a ver las Listas:</p>
+ <P>- Esto es una UL osea una Lista no ordenada</P>
+<ul>
+    <li> Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ul>
+
+<P>- Esto es una OL osea una Lista ordenada, solo permite ordenar hasta el elemento 12.<br>
+como curiosidad también podemos hacer que la lista empiece con cualquer numero, lo pondre en la siguiente lista.</P>
+
+<ol>
+    <li> Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ol>
+
+<p>La siguiente :</p>
+<ol>
+    <li value="20">Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+    <li>Elemento 4</li>
+</ol>
+<p>Ahora vamos a ver como anidar listas con ese mismo formato:</p>
+<body>
+    <ol>
+        <li value="20">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    <li>
+        <ol>
+            <li style="list-style-type: lower-alpha">subelemento 1</li>
+            <li style="list-style-type: lower-alpha">subelemento 2</li>
+            <li style="list-style-type: lower-alpha">subelemento 3</li>
+            <li>subelemento 4</li>
+        </ol>
+    </li>
+</ol>
+</body>
+<p>Es importante al anidar listas entender que hay stilos y a todos los elementos.</p>
+
+
+<p>Ahora toca hablar de Tablas:</p>
+
+<p>Para crear una tabla debemos entender que TH representa un encabezado de  un producto y con TD representamos los datos de cada celda de <br>
+Para hacer tablas usamos un formato similar al de las listas pero añadiendo la etiqueta de TABLE <br>
+
+<p>También tener conocimiento basico de css nos ayudara a ue nuestras tablas queden muchissimo mas esteticas, como se muestra en el ejemplo de abajo, unque tambien podemos crear efectos similares desde HTML aunque si que es mas tedioso.<br>
+donde se le da un borde a la tabla, a los encabezados y a las celdas.
+Para agrandar el espacio en las celdas de la tabla se usa el whidth y el height, como si fuera una imagen, pero en este caso se lo damos a las etiquetas de TD y TH.</p>
+
+<head>
+    <title> MI primera tabla</title>                             
+</head>
+<body>
+    <table style="border:1px solid black;">
+        <tr>
+            <th>Producto</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td>chanchito feliz muy feliz</td>
+            <td>$30.00</td>
+        </tr>
+    </table>
+    <br>
+    <table style="width: 500px;">
+        <tr>
+            <th>Producto</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td>chanchito feliz muy feliz</td>
+            <td>$30.00</td>
+        </tr>
+    </table>
+</body>   
+<br>
+<p>Aquí queda reflejada la tabla con uso de CSS, dentro de la etiqueta Style</p>
+
+<head>
+    <title>Mi segunda tabla</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }                               
+    </style>
+</head>
+<body>
+    <table style="border: solid black;">
+        <tr>
+            <th>Producto</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>Producto 2</td>
+            <td>$15.00</td>
+        </tr>
+        <tr>
+            <td>chanchito feliz muy feliz</td>
+            <td>$30.00</td>
+        </tr>
+    </table>
+</body>   
+<br>
+<body>
+    <table style="width: 500px;">
+        <tr>
+            <th>Producto</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>chanchito feliz muy feliz</td>
+            <td>$30.00</td>
+        </tr>
+    </table>
+</body>   
+</html>
