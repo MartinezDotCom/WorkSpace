@@ -310,5 +310,64 @@ Para agrandar el espacio en las celdas de la tabla se usa el whidth y el height,
         </tr>
     </table>
 </body>  
-<p>Hola papa, que tal estas hoy?</p> 
+
+<p>Ahora vamos a prender a agrupar las cabeceras de nuestras tablas usando la etiqueta de THEAD<br>
+Devemos tener en cuenta que el uso de las etiquetas de TBODY y de THEAD no dan ningun canvio visual a nuestra web<br>
+pero si hace que algunos buscadores , no todos, nos permitan separar la cabecera del cuerpo de la tabla y hacer scroll en ella</p> 
+
+<p>Por otra parte tambien existe la etiqueta de TFOOT para crear un pie de tabla</p>
+
+<head>
+    <title>Mi segunda tabla</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }                               
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Producto 1</td>
+                <td>$10.00</td>
+            </tr>
+            <tr>
+                <td>Producto 2</td>
+                <td>$15.00</td>
+            </tr>
+            <tr>
+                <td>chanchito feliz muy feliz</td>
+                <td>$30.00</td>
+            </tr> 
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total:$55.00</td>
+        </tfoot>       
+    </table>         
+</body>   
+<br>
+<body>
+    <table style="width: 500px;">
+        <tr>
+            <th>Producto</th>
+            <th>precio</th>
+        </tr>
+        <tr>
+            <td>Producto 1</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td>chanchito feliz muy feliz</td>
+            <td>$30.00</td>
+        </tr>
+    </table>
+</body>  
 </html>
