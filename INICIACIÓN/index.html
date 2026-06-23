@@ -10,26 +10,7 @@
         <input id = "nombre" />
     </form>
    
-    <p>Bien, en este parrafo hablaremos de las etiquetas de HEADER, que se usan para poder agrupar links, alguna imagen o logo de nuestra pagina<br>
-    y lo mas importante, nosotros podemos crear tantas etiquetas de HEADER como queramos, siempre y cuando esta cumpla con 2 reglas basicas :<br>
-    1. No podemos poner un etiqueta de HEADER dentro de otra etiqueta de HEADER.<br>
-    2. No podemos poner un etiqueta de HEADER dentro de un etiqueta de FOOTER.</p>
-
-    <p>Lo que nos lleva a nuestra siguiente etiqueta de FOOTER la cual se utiliza para colocar el pie de pagina de nuestra Pweb.<br>
-    Esta etiqueta de FOOTER por lo general contienen información como direcciones, contactos o enlaces a políticas de privacidad,<br>
-     y se puede usar tantas veces como queramos, siempre y cuando cumpla con 2 reglas basicas :<br>       
-    1. No podemos poner un etiqueta de FOOTER dentro de otra etiqueta de FOOTER.<br>
-    2. No podemos poner un etiqueta de FOOTER dentro de un etiqueta de HEADER.</p>
-    </p>
-
-    <p>Y también está la etiqueta de SECTION la cual se utiliza para poder definir secciones dentro de nuestra web <br>ç
-    y dentro de cada sección podemos agrupar elementos relacionados como etiquetas.</p>
-
-    <p>Pero eso NO es todo... pues también tenemos las etiquetas de ARTICLE las cuales se utilizan para definir contenido independiente y reutilizable en nuestra web.</p>
-
-    
-
-    <h1>Mi primer heading</h1>
+    <h1 id="titulo">Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
     <h3>Mi tercer heading</h3>
     <h4>Mi cuarto heading</h4>
@@ -40,6 +21,9 @@
 
     <p>Mi primer párrafo</p>
     
+    <p>Rapidamente hos explico que es ID, ID es un atrbuto y nos permite identificar elementos en un documento, pero jamas devemos poner dos ID iguales ya que ccrearia confusión<br>
+    entonces devemos usar la etiqueta CLASS, ya que este si nos permite seleccionar mas de un elemento usando otros  </p>
+
     <p>Mi segundo párrafo y lo usare para <span style = "color:aquamarine">remarcar la etiqueta</span> de (/span)</p>
     
     <!-- Este texto es un Comentario -->
@@ -395,5 +379,53 @@ pero si hace que algunos buscadores , no todos, nos permitan separar la cabecera
             <td>$30.00</td>
         </tr>
     </table>
-</body>  
+</body>
+<hr>
+<body>
+    <h2>BLOG</h2>
+    <p>Apartir de aquí todo el resto de infomración se verá reflejada en el blog de practica siguiente</p>
+    <br>
+    <p>Bien, en este parrafo hablaremos de las etiquetas de HEADER, que se usan para poder agrupar links, alguna imagen o logo de nuestra pagina<br>
+    y lo mas importante, nosotros podemos crear tantas etiquetas de HEADER como queramos, siempre y cuando esta cumpla con 2 reglas basicas :<br></p>
+    <p>
+    1. No podemos poner un etiqueta de HEADER dentro de otra etiqueta de HEADER.<br>
+    2. No podemos poner un etiqueta de HEADER dentro de un etiqueta de FOOTER.</p>
+
+    <p>Lo que nos lleva a nuestra siguiente etiqueta de FOOTER la cual se utiliza para colocar el pie de pagina de nuestra Pweb.<br>
+    Esta etiqueta de FOOTER por lo general contienen información como direcciones, contactos o enlaces a políticas de privacidad,<br>
+    y se puede usar tantas veces como queramos, siempre y cuando cumpla con 2 reglas basicas :<br></p>       
+    <p>
+    1. No podemos poner un etiqueta de FOOTER dentro de otra etiqueta de FOOTER.<br>
+    2. No podemos poner un etiqueta de FOOTER dentro de un etiqueta de HEADER.</p>
+    
+
+    <p>Y también está la etiqueta de SECTION la cual va colocada entre HEADER Y FOOTER y se utiliza para poder definir secciones dentro de nuestra web <br>ç
+    y dentro de cada sección podemos agrupar elementos relacionados como etiquetas.</p>
+
+    <p>Pero eso NO es todo... pues también tenemos las etiquetas de ARTICLE las cuales se utilizan para definir contenido independiente y reutilizable en nuestra web.</p>
+
+    <p>JEJEJEJ aun no termino, también está DIV que hace la misma funcion que SECTION pero sin semántica específica y va colocada entre HEADER Y SECTION O HEADER Y FOOTER.<br>
+    Por cierto las etiquetas de DIV se pueden meter unas dentro de otras, pero... devemos evitar cosas como:<br></p>
+
+    <p>
+    1. Poner parrafos dentro de varias etiquetas de DIV, ya que esto no tiene sentido y es un error de maquetación.<br>
+    2. Poner etiquetas de DIV dentro de otras etiquetas de DIV, ya que esto no tiene sentido y es un error de maquetación.<br>
+    </p>
+
+    <p>Tambien vamos a hablar de el atributo de ID en la etiqueta de A, usando un link dentro de nuestra propia web para que nos lleve a un sitio concreto de nuestra web.<br>
+    Podeis ver el ejemplo en el BLOG abajo del todo en la etiqueta FOOTER donde hemos usado el atributo A para enviarnos a <br>
+    la etiqueta de H2 que tiene el ID de "titulo" y nos lleva a la parte superior de la web.</p>  
+
+    <footer>
+        <p>Bueno, finalmente hemmos terminado este resumen de HTML, espero que a todos aqueyos que lo hayan leído les haya ayudado a aprender<br>
+        Y sobre todo que hayan disfrutado el contenido</p>
+        <p>Por otra parte AGRADECER a @HolaMundo ya que esto ha sido gracias a sus videos de youtube y no espero ningun credito de ello ni <br>
+        remuneración de ningun tipo, porfavor ir a ver sus grandes videos, es un crack.</p>
+        <p>Y por ultimo, gracias po leerme y hasta luego.</p>
+
+        <a href="#titulo">Ir arriba</a><br>
+        <a href="mailto:marcmartinez.p.2000@gmail.com">Email de contacto</a>
+        <p>Copyright © 2026 MartinezDotCom. Todos los derechos reservados.</p>  
+</footer>
+</body>
 </html>
