@@ -2,22 +2,37 @@
 <html>
 <head>
     <title>CSS</title>
+    <link rel="stylesheet" href="Iniciación.css"/>
 </head>
 <body>
-    <h1>CSS RESUMEN</h1>
+    <h1 id="Titulo">CSS RESUMEN</h1>
 
-    <p>Que es CSS?</p>
-    <p>CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento estructurado escrito en HTML.</p>
+    <p class="texto">Que es CSS?</p>
 
+    <p class="texto">CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación de un documento estructurado o escrito en HTML.</p>
+   
     <p>Hay varias formas de utilizar CSS, mas concretamente 3:<br>
         1. En el propio documento HTML<br>
         2. En un archivo externo con extensión .css<br>
         3. (La menos recomendada) Dentro de una etiqueta style en el documento HTML<br>
-    </p>
-
+    
     <p style="color:tomato"> Vamos a ver un ejemplo practico , rapido y facil de esta tercera opción ya que NO la trabajaremos mucho <br>
     Y lo vamos a ver en este mismo texto y podremos apreciar que de esta manera lo unico que conseguimos<br>
     es complicar el codigo y tener un desorden mayor para otros compañeros</p>
 
+    <p class="texto">La forma que vamos a ver, que es la num. 1 de la lista, es menos mala que la anterior y consiste en<br>
+    utilizar una etiqueta de STYLE dentro de la etiqueta de HEAD. En este caso no voy a hacer una muestra<br>
+    debido
+    a que me obligaria a canviar todo el texto ya que al aplicar en la etiquets HEAD afectaria a todo.</p>
+
+    <p class="texto">Bien, la forma 2 , que es la mas recomendada consiste en importar un archivo de CSS medinte un link<br>
+    (LINK REL="stylesheet" href="Iniciación.css") que se situa en la etiqueta de HEAD.<br>
+    Ahora, porque en la etiqueta ponemos esto, el (REL="STYLESHEET") indica que el archivo linked es una<br>
+    hoja de estilo y el (HREF="Iniciación.css") indica la ruta del archivo de estilo, lo que significa que si <br>
+    nuestra hoja se llama m... PULPITO.CSS ese es la ruta de archivo que deberos referenciar en HREF.</p>
+
+    <p>Siguiendo con la forma 2... hay distintas formas de aplicar dichos estilos, todos se basan<br>
+    en otorgar propiedades a los elementos de HTML como : ID, CLASS, TAG. A trabes de estas propiedades podemos<br>
+    modificar los estilos en nuestro documento de CSS, las propiedades siepre deben seleccionarse usando (#).</p>
 </body>
 </html>

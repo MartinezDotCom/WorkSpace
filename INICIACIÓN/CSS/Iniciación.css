@@ -1,0 +1,23 @@
+
+*Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
+notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado.*/
+
+*En esta etiqueta podemos ver como se usa la etiqueta BODY para cambiar el color de la letra
+de todo el lo que esté dentro de el BODY, pero en este caso no canvia nada porque hemos añadido
+propiedades a todos los parrafos por lo que el BODY no tiene efecto en este caso.*/
+
+body{color:tomato;}
+
+*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta H1,
+pero como la etiqueta de H1 tambien tiene una propiedad de titutlo la cual dentro de CSS se selcciona
+usando un #, pues la propiedad tiene mas peso que la etiqueta por lo que afecta el color BLUE Y NO BLACK.*/
+
+h1 {color:black;}
+#Titulo {color:blue;}
+
+*En este caso es igual que el anterior pero modificamos el color a la etiqueta P, pero como hay algan etiquetas
+que tienen propieda de Class, al seccionar una canvio de color en la propiedad de CLASS usando el (.) todas las
+las etiquetas de P con propiedad de CLASS se veran afectadas por el canvio de color.*/
+
+P{color:green;}
+.texto{color:black;}
