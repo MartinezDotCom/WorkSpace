@@ -19,5 +19,5 @@ h1 {color:black;}
 que tienen propieda de Class, al seccionar una canvio de color en la propiedad de CLASS usando el (.) todas las
 las etiquetas de P con propiedad de CLASS se veran afectadas por el canvio de color.*/
 
-P{color:green;}
-.texto{color:black;}
+.texto1 {color: rgb(255, 0, 0);}  
+
