@@ -1,28 +1,38 @@
 
-*Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
-notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado.*/
+Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
+notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado.
 
 /*En esta etiqueta podemos ver como se usa la etiqueta BODY para cambiar el color de la letra
-de todo el lo que esté dentro de el BODY, pero en este caso no canvia nada porque hemos añadido
+de todo lo que esté dentro de BODY, pero en este caso no canvia nada porque hemos añadido
 propiedades a todos los parrafos por lo que el BODY no tiene efecto en este caso.*/
 body{color:tomato;}
 
-/*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta H1,
-pero como la etiqueta de H1 tambien tiene una propiedad de titutlo la cual dentro de CSS se selcciona
-usando un # pues la propiedad tiene mas peso que la etiqueta por lo que afecta el color GREEN Y NO BLACK.*/
-h1 {color:black;}
-
+/*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta de P, lo que hace que tpdp aquello
+que use una etiqueta de P se vea afectado por el cambio de color, en este caso hemos cambiado el color a ORANGE.*/
+P {color:orange;}
+S
 /*Aquí hemos hecho lo mismo que el caso anterior aunque usando la etiueta de H1 a la qual hemos dado una id con el nombre de Titutlo,
-por lo qual aunque no ssea el titulo real de la web si que afectara a la etiqueta de H1 con la propiedad de ID Titutlo y le cambiara el color a GREEN.*/
+por lo qual aunque no sea el titulo real de la web si que afectara a la etiqueta de H1 con la propiedad de ID Titutlo y le cambiara el color a GREEN.*/
 #Titulo {color: green;}
 
 /*En este caso es igual que el anterior pero modificamos el color a la etiqueta P, pero como hay algunas etiquetas
 que tienen propiedad de Class, al seccionar un canvio de color en la propiedad de CLASS usando el . todas las
 las etiquetas de P con propiedad de CLASS se veran afectadas por el canvio de color, por lo que he decidido ponerle
-nombre a tra etiqueta de class en este casto será textouno*/
-.textouno {color:blue;}
+nombre a la etiqueta de class en este casto será textouno así solo se verá afectada esa etiqueta*/
+p.textouno {color:blue;}
 
-/*
+/*Bien, es importante aclarar que en CSS si importa como apliquemos este tipo de modificadores y mas cuando varias lineas compartan
+el mismo nombre de etiqueta pues puede variar el resultado de la aplicacion de los estilos, por lo que es importante tener en cuenta el orden 
+de aplicacion de los estilos y tambien aclarar que hay textos compuestos osea que si a una etique le aplicamos la CLASS de */
+/*ejemplo:*/
 
 
+p.texto {color:purple;}
+p.especial {color:Brown;}
 
+/*Es importante aclarar que si las etiuetas cambian de orden ose si primero aplicamos la propiedad de CLASS de texto y luego la de especial,
+el resultado sera diferente, por lo que es importante tener en cuenta el orden de aplicacion de los estilos.*/
+
+/*Esto es el tema del DIV */
+/*Lo que basicamente significa esto es que si tenemos una etiqyeta DIV y dentro hay una etiqueta P ya sea seha directa indirecta o ininindirecta quedará afectada*/
+div p {color:lightblue;}
