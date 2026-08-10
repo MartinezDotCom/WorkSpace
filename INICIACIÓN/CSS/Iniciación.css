@@ -2,9 +2,11 @@
 Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
 notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado.
 
+/*esto es un comentario*/
+
 /*En esta etiqueta podemos ver como se usa la etiqueta BODY para cambiar el color de la letra
 de todo lo que esté dentro de BODY, pero en este caso no canvia nada porque hemos añadido
-propiedades a todos los parrafos por lo que el BODY no tiene efecto en este caso.*/
+propiedades a todos los párrafos por lo que el BODY no tiene efecto en este caso.*/
 body{color:tomato;}
 
 /*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta de P, lo que hace que tpdp aquello
@@ -25,14 +27,125 @@ p.textouno {color:blue;}
 el mismo nombre de etiqueta pues puede variar el resultado de la aplicacion de los estilos, por lo que es importante tener en cuenta el orden 
 de aplicacion de los estilos y tambien aclarar que hay textos compuestos osea que si a una etique le aplicamos la CLASS de */
 /*ejemplo:*/
-
-
 p.texto {color:purple;}
 p.especial {color:Brown;}
 
-/*Es importante aclarar que si las etiuetas cambian de orden ose si primero aplicamos la propiedad de CLASS de texto y luego la de especial,
+/*Es importante aclarar que si las etiuetas cambian de orden osea si primero aplicamos la propiedad de CLASS de texto y luego la de especial,
 el resultado sera diferente, por lo que es importante tener en cuenta el orden de aplicacion de los estilos.*/
 
 /*Esto es el tema del DIV */
-/*Lo que basicamente significa esto es que si tenemos una etiqyeta DIV y dentro hay una etiqueta P ya sea seha directa indirecta o ininindirecta quedará afectada*/
+/*Lo que basicamente significa esto es que si tenemos una etiqueta DIV y dentro hay una etiqueta P ya sea sea directa indirecta o ininindirecta quedará afectada, pero
+nunca afectara a otra etiqueta unicamente aquellas que estén dentro de esa etiqueta DIV y en este caso concreto solo a las que tengan una etiqueta P*/
 div p {color:lightblue;}
+
+/*Ahora vamos a hacer lo mismo pero con la etiqueta de h2*/
+/*Posteriormente queremos que el mismo estilo se aplique a otra etiqueta ya sea dentro o fuera de la etiqueta DIV, para eso unicamente tenemos que poner la etiqueta
+al lado separado con una coma*/
+div h2, div h3 {color:lightgreen;}
+
+/*Ahora veamos un nuevo selector y sirve para seleccionar absolutamente todos los elementos que tengamos dentro de nuestro HTML*/
+/*Es importante saber que aunque este selector afecte a todos los elementos, si ya existe un estilo aplicado a una etiqueta en concreto,
+este estilo no se aplicara a esa misma, pero si una tiene un estilo de color y aplicamos un estilo de tamaño de letra, este si se aplicara*/
+{front-size: 24px;
+  color:black} 
+
+/*Aquí vamos a ver y tratar formas de escojer colores en CSS, que serian los colores por nombre, por código hexadecimal y por código RGB*/
+/*como el metodo de color ya lo hemos visto ahora veremos el metodo hexadecimal, esto puede ser en 3 digitos o 6 digitos*/
+/*Para poder eusar los colores hexadecimales devemos tener ciertos conocimientos tecnico-tacticos jeje, para usarlo antes de todo devemos 
+poner un #, luego otra cosa importante es saver que 0 es la completa ausencia de color(negro) y F la mayor expresión del color (blanco).*/
+
+/*.color {color:#000} 
+.color {color:#f00}
+.color {color:#0f0}
+.color {color:#00f}
+.color {color:#fff}*/
+
+/*Con esta muestra de los primarios usando la F y el 0 ya sabemos que con esto podemos abarcaar casi todo el espectro visible*/
+/*Ahora veamos el metodo con 6 digitos, donde los dos primeros 0 incan el rojo, los dos siguientes equivalen al Verde y los dos
+utimos equivalen al color Azul*/
+
+/*.color {color:#f00000}
+.color {color:#ff0000}
+
+/*Ahora si, toca ablar del RGB, el qual funciona muymuy similiar al ehadecimal pero... debemos poner numeros del 0 al 255,
+siendo el primer nuemro el Rojo el segundo el Verde i el tercero el Azul*/
+
+/*.color{color:rgb(255, 0, 0);}
+.color{color:rgb(0, 255, 0);}
+.color{color:rgb(0, 0, 255);}
+
+/*Bien una vez entendido essto pasamos a crear bordes que seria tal que así*/
+
+.color { border: 5px black double;} 
+
+ /*Aqui hos dejo oltras alternativas por si quereis probar :
+dotted
+dashed
+solid
+double
+(groove
+ridge
+inset
+outset)
+none
+hidden*/
+/*Los 4 que están entre parentesis se pueden aplicara aobjetos 3D y los otros 4 son para objetos 2D, aunque el hidden es para ocultar el borde y el none es para no poner borde.*/
+
+
+/*Ahora Vamos a ver el Border-style, que nos permite cambiar el estilo del borde, que puede ser de 8 formas diferentes, aunque ya hemos visto 4 de ellas*/
+#color {border-style:solid;
+border-color:blue;
+border-radius: 5px;
+border-width: 5px;} 
+
+/*Ahora veamos distintas formas de medidas dentro de CSS, que pueden ser en pixeles, en porcentaje, en em, en rem, en vh y en vw,
+es muy muy muy importante entender que las medids no son exactamente iguales en todos los dispositivos por lo que hay que entender que són,
+medidas "relativas"*/
+
+.explicacion-1 {
+    font-size: 24px;
+    color: red;
+}
+
+.explicacion-2 {
+    font-size: 150%;
+    color: blue;
+}
+
+.explicacion-3 {
+    font-size: 1.5em;
+    color: green;
+}
+
+.explicacion-4 {
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.explicacion-5 {
+    font-size: 5vh;
+    color: purple;
+}
+
+.explicacion-6 {
+    font-size: 5vw;
+    color: brown;
+}
+
+/*La regla de oro moderna: Usa rem para textos/márgenes, % o vw/vh para estructuras/anchos de pantalla, y reserva px solo para bordes y detalles pequeños.*/
+
+/*Bien, ahora vamos a ver como podemos cambiar el color de fondo de nuestra web, osea el background*/
+
+#fondo {background-color:rgba(32, 178, 56, 1);
+wheight:400px;
+height:400px;
+background-image: url('Puerta.jpg');
+background-size: auto;}
+
+/*Aquí podeis ver que hemos aplicado un colo RGBA, que es similar al RGB pero con un cuarto valor que es la opacidad, que va
+de 0 a 1, siendo 0 completamente transparente y 1 completamente opaco, por lo que en este caso hemos puesto un valor de 0.3 que 
+es un 30% de opacidad, por lo que se ve un poco transparente*/
+
+/*Aunque también existe la propiedad de opacity que es similar a la opacidad de RGBA pero afecta a todo el elemento,
+ incluyendo el texto y los bordes, por lo que si queremos que solo afecte al fondo debemos usar RGBA y si queremos que afecte
+ a todo el elemento debemos usar opacity*/ 
