@@ -12,7 +12,7 @@ body{color:tomato;}
 /*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta de P, lo que hace que tpdp aquello
 que use una etiqueta de P se vea afectado por el cambio de color, en este caso hemos cambiado el color a ORANGE.*/
 P {color:orange;}
-S
+
 /*Aquí hemos hecho lo mismo que el caso anterior aunque usando la etiueta de H1 a la qual hemos dado una id con el nombre de Titutlo,
 por lo qual aunque no sea el titulo real de la web si que afectara a la etiqueta de H1 con la propiedad de ID Titutlo y le cambiara el color a GREEN.*/
 #Titulo {color: green;}
@@ -46,8 +46,8 @@ div h2, div h3 {color:lightgreen;}
 /*Ahora veamos un nuevo selector y sirve para seleccionar absolutamente todos los elementos que tengamos dentro de nuestro HTML*/
 /*Es importante saber que aunque este selector afecte a todos los elementos, si ya existe un estilo aplicado a una etiqueta en concreto,
 este estilo no se aplicara a esa misma, pero si una tiene un estilo de color y aplicamos un estilo de tamaño de letra, este si se aplicara*/
-{front-size: 24px;
-  color:black} 
+*{font-size: 24px;
+color:black} 
 
 /*Aquí vamos a ver y tratar formas de escojer colores en CSS, que serian los colores por nombre, por código hexadecimal y por código RGB*/
 /*como el metodo de color ya lo hemos visto ahora veremos el metodo hexadecimal, esto puede ser en 3 digitos o 6 digitos*/
@@ -136,11 +136,21 @@ medidas "relativas"*/
 
 /*Bien, ahora vamos a ver como podemos cambiar el color de fondo de nuestra web, osea el background*/
 
-#fondo {background-color:rgba(32, 178, 56, 1);
-wheight:400px;
-height:400px;
-background-image: url('Puerta.jpg');
-background-size: auto;}
+#fondo{
+  background-color: rgba(32, 178, 56); /* Un verde semitransparente */
+  width: 400px; /* Corregido: antes tenías 'wheight' */
+  height: 400px;
+  background-image: url('img/Puerta.jpg'); /* ¡Verifica esta ruta según el punto 2! */
+  background-size: cover; 
+  /*Si aquí añadimos por ejemplo 400px 400px, la imagen se ajustará a esas dimensiones, pero si la imagen original no tiene esas proporciones, se distorsionará.
+  Y cabe aclarar que el primer 400 seía el ancho y el segundo el auto aún sin especificarlo*/
+  /* Importante: fuerza a que la imagen ocupe los 400x400px */
+  /*También hay que decir que hay mas propiedaded*/
+  background-repeat: no-repeat;/* Evita que la imagen se repita */
+  background-position: center; 
+  /* Hay mas de una seleccion para otorgar posicion en la web, y se haría de la siguiente forma: top left, top center, top right, center left, center center, center right, bottom left, bottom center, bottom right*/
+  /* Centra la imagen */}
+
 
 /*Aquí podeis ver que hemos aplicado un colo RGBA, que es similar al RGB pero con un cuarto valor que es la opacidad, que va
 de 0 a 1, siendo 0 completamente transparente y 1 completamente opaco, por lo que en este caso hemos puesto un valor de 0.3 que 
@@ -149,3 +159,11 @@ es un 30% de opacidad, por lo que se ve un poco transparente*/
 /*Aunque también existe la propiedad de opacity que es similar a la opacidad de RGBA pero afecta a todo el elemento,
  incluyendo el texto y los bordes, por lo que si queremos que solo afecte al fondo debemos usar RGBA y si queremos que afecte
  a todo el elemento debemos usar opacity*/ 
+
+/*Ahora aremos exactamente lo mismo que en el caso anterior pero resumiendolo todo cpon la simple etiqueta de Backgroun*/
+
+#fondo2 {
+  width: 400px;
+  height: 400px;
+  background-image: 
+}
