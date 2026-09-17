@@ -1,12 +1,13 @@
 
-Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
-notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado.
+/* Bien devido a la dificil interpretación de los dos archivos HTML y CSS, aguí iré dejando
+notas informativas de todos los pasos que vamos a ir realizando así será mas ordenado. */
 
 /*esto es un comentario*/
 
 /*En esta etiqueta podemos ver como se usa la etiqueta BODY para cambiar el color de la letra
 de todo lo que esté dentro de BODY, pero en este caso no canvia nada porque hemos añadido
 propiedades a todos los párrafos por lo que el BODY no tiene efecto en este caso.*/
+
 body{color:tomato;}
 
 /*En este caso es similar al anterior pero en ves de ser una etiqueta Body es una etiqueta de P, lo que hace que tpdp aquello
@@ -65,7 +66,7 @@ poner un #, luego otra cosa importante es saver que 0 es la completa ausencia de
 utimos equivalen al color Azul*/
 
 /*.color {color:#f00000}
-.color {color:#ff0000}
+.color {color:#ff0000}*/
 
 /*Ahora si, toca ablar del RGB, el qual funciona muymuy similiar al ehadecimal pero... debemos poner numeros del 0 al 255,
 siendo el primer nuemro el Rojo el segundo el Verde i el tercero el Azul*/
