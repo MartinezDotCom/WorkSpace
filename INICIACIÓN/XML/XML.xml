@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FORMACIÓN>
+<!-- 
+    ====================================================================
+    APUNTES Y GUÍA PRÁCTICA DE XML
+    Asignatura: Lenguajes de Marcas
+    ====================================================================
+    REGLAS GENERALES DE XML:c 
+    1. Solo puede existir UN elemento raíz por archivo.
+    2. Todas las etiquetas deben cerrarse (o ser autocerradas).
+    3. Es sensible a mayúsculas y minúsculas (Case-sensitive).
+    4. Los valores de los atributos SIEMPRE van entre comillas.
+-->
+
+<apuntes_xml>
+
+    <!-- ===============================================================
+         BLOQUE 1: ESTRUCTURA BÁSICA, ELEMENTOS Y ATRIBUTOS
+         ===============================================================
+         - Elemento: Formado por etiqueta de apertura <tag>, contenido y cierre </tag>.
+         - Atributo: Información adicional en la etiqueta de apertura (clave="valor").
+         - ¿Cuándo usar atributo o elemento?
+           * Atributos: Para metadatos o identificadores (id, estado, tipo).
+           * Elementos: Para los datos principales o textos largos.
+    -->
+    <seccion id="bloque-1" nombre="Sintaxis Basica">
+        <concepto>
+            <nombre>Elemento simple</nombre>
+            <ejemplo>Texto de prueba</ejemplo>
+        </concepto>
+
+        <concepto>
+            <nombre>Elemento con atributos</nombre>
+            <!-- Ejemplo con varios atributos en una sola etiqueta -->
+            <item id="101" disponible="true" categoria="libreria">
+                Manual de Lenguajes de Marcas
+            </item>
+        </concepto>
+    </seccion>
+
+
+    <!-- ===============================================================
+         BLOQUE 2: CARACTERES ESPECIALES Y SECCIONES CDATA
+         ===============================================================
+         En XML no se pueden usar directamente símbolos como '<' o '&' dentro del texto.
+         Se deben usar ENTIDADES PREDEFINIDAS:
+           * &lt;   => representa el símbolo menor que (<)
+           * &gt;   => representa el símbolo mayor que (>)
+           * &amp;  => representa el ampersand (&)
+           * &quot; => representa comillas dobles (")
+           * &apos; => representa comilla simple (')
+
+         Si quieres escribir código fuente o texto plano sin escapar caracteres,
+         puedes usar una sección CDATA: <![CDATA[ contenido aquí ]]>
+    -->
+    <seccion id="bloque-2" nombre="Manejo de Texto Especial">
+        <entidades_ejemplo>
+            5 es &lt; 10 y 10 es &gt; 5.
+        </entidades_ejemplo>
+
+        <codigo_ejemplo>
+            <![CDATA[
+                if (a < b && b > 0) {
+                    System.out.println("Ejemplo de código en Java sin errores de XML");
+                }
+            ]]>
+        </codigo_ejemplo>
+    </seccion>
+
+
+    <!-- ===============================================================
+         BLOQUE 3: PRÓXIMOS TEMAS (Para ir completando en clase)
+         ===============================================================
+         Espacio reservado para los siguientes temas del módulo:
+         - Validaciones: DTD (Document Type Definition) y XSD (XML Schema).
+         - Espacios de Nombres (Namespaces - xmlns).
+         - Consultas con XPath y Transformaciones con XSLT.
+    -->
+    <seccion id="bloque-3" nombre="Futuros Temas">
+        <!-- Iremos añadiendo código a medida que los veas en clase -->
+    </seccion>
+
+</apuntes_xml>
+
+</FORMACIÓN>
+   
