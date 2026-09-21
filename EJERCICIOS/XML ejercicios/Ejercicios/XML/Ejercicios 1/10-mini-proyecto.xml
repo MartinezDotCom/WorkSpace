@@ -1,0 +1,26 @@
+<!--
+=====================================================================
+ 10 · MINI PROYECTO INTEGRADOR
+=====================================================================
+ Crea un documento XML sobre TU clase / TUS módulos del ciclo.
+ Nadie te da estructura: la diseñas tú (haz antes un dibujo del árbol).
+
+ REQUISITOS
+  [ ] Declaración XML con UTF-8 en la línea 1
+  [ ] Un único elemento raíz
+  [ ] Mínimo 3 niveles de profundidad
+  [ ] Al menos 3 elementos hermanos con el mismo nombre (p. ej. varios <modulo>)
+  [ ] Al menos 2 atributos (con comillas)
+  [ ] Un elemento vacío
+  [ ] Un comentario explicativo
+  [ ] Una entidad predefinida en un texto
+  [ ] Una sección CDATA
+  [ ] Un namespace (con prefijo o por defecto)
+  [ ] xml:lang en algún elemento
+  [ ] Sin errores en la pestaña Problems
+
+ RETO EXTRA
+  Escribe en un comentario final la lista de: raíz, hijos del raíz,
+  y un ejemplo de hermanos, ascendientes y descendientes de uno de tus nodos.
+=====================================================================
+-->

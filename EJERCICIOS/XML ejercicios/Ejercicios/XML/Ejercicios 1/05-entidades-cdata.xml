@@ -1,0 +1,28 @@
+<!--
+=====================================================================
+ 05 · ENTIDADES PREDEFINIDAS Y CDATA
+=====================================================================
+ RECUERDA
+  - Caracteres reservados que NO puedes escribir tal cual dentro del texto:
+    < > & ' "  →  se sustituyen por entidades.
+  - CDATA: bloque que el procesador NO analiza → dentro puedes escribir
+    < y & sin problema.
+
+ TU TURNO
+  1. Averigua las 5 entidades predefinidas y escribe un elemento por cada una
+     donde aparezca el carácter correspondiente en una frase.
+  2. Escribe en un <formula> el texto:   5 < 10 && 10 > 5
+       a) usando entidades
+       b) usando una sección CDATA
+  3. Escribe un <html> con el texto de un fragmento HTML como
+     <p>Hola</p> visible como TEXTO (no como etiquetas XML).
+  4. PRUEBA: escribe &nbsp; en un elemento. ¿Qué error da? ¿Por qué?
+     (Ojo: en el PDF aparece &nbsp como entidad. Investiga si lo es en XML.)
+  5. PRUEBA: ¿se puede escribir "]]>" dentro de un CDATA? Anota qué ocurre.
+
+ AUTOCOMPROBACIÓN
+  [ ] Sin errores rojos
+  [ ] Sé cuándo usar entidades y cuándo CDATA
+  [ ] Sé por qué &nbsp; da error (y qué otra cosa podría usar)
+=====================================================================
+-->

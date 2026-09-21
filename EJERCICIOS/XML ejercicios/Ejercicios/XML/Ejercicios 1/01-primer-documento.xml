@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=====================================================================
+ 01 · PRIMER DOCUMENTO XML
+=====================================================================
+ RECUERDA
+  - La declaración <?xml version="1.0" encoding="UTF-8"?> es OPCIONAL,
+    pero si la pones va en la PRIMERA línea (nada antes, ni un espacio).
+  - Solo puede haber UN elemento raíz.
+  - Todo elemento: <etiqueta>contenido</etiqueta>. Apertura y cierre iguales.
+  - XML distingue MAYÚSCULAS y minúsculas.
+
+ TU TURNO (borra este comentario o escribe debajo de él; la declaración
+ debe quedar la primera línea del archivo, así que ponla ARRIBA DEL TODO)
+  1. Escribe la declaración XML con codificación UTF-8.
+  2. Crea una <noticia> (con TUS datos) que contenga: <fecha>, <lugar>
+     y <descripcion>.
+  3. Añade a la noticia un <titular> y un <autor>.
+  4. Comprueba: ¿qué error da VS Code si cierras </Noticia> con mayúscula?
+   - Me indica que la etiqueta de cierre no es igual que la de apertura y que XML es sensible a las mayusculas y minusculas.
+  5. Comprueba: ¿y si añades un segundo elemento raíz después de </noticia>?
+   - Me incida que solo puede haber un elemento raíz y que el segundo elemento raíz no es valido.
+
+ AUTOCOMPROBACIÓN
+  [ ] Sin errores rojos en la pestaña Problems
+  [ ] Declaración en la línea 1
+  [ ] Un único raíz
+  [ ] Sé explicar el mensaje de error de los pasos 4 y 5
+=====================================================================
+-->
+<Noticia>
+    <titular>Primer Ejercicio de XML</titular>
+    <fecha>21/09/2024</fecha>
+    <lugar>Mataró</lugar>
+    <descripcion>Estoy empezando el Grado superior de DAW y emos empezado Lenguaje de Marcas con XML, por eso e creado estos ejercicios</descripcion>
+    <autor>Marc.M.P</autor>
+</Noticia>

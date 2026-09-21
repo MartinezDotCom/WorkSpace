@@ -1,0 +1,28 @@
+<!--
+=====================================================================
+ 08 · ESPACIOS DE NOMBRES
+=====================================================================
+ RECUERDA
+  - Se declara con xmlns:prefijo="URI" en un elemento.
+  - Afecta a ese elemento y a TODOS sus descendientes.
+  - La URI es solo un nombre lógico único: no tiene que existir en internet.
+  - Si un descendiente redeclara, prevalece el MÁS CERCANO.
+  - Espacio por defecto: xmlns="URI" (sin prefijo). No afecta a los atributos.
+
+ TU TURNO
+  1. Problema: un documento con <id> del alumno y <id> de la asignatura.
+     Escríbelo primero SIN namespaces y observa por qué es ambiguo.
+  2. Resuélvelo con DOS namespaces con prefijo (alu y asig), con URIs inventadas.
+  3. Reescribe la solución usando un namespace POR DEFECTO para el alumno.
+  4. Dentro del alumno, declara otro namespace por defecto distinto para la
+     <asignatura>. ¿A cuál pertenece <nombre> dentro de asignatura?
+  5. Añade a un elemento un atributo con prefijo (alu:tipo="x") y otro
+     sin prefijo (tipo="x"). ¿Cuál pertenece al namespace? Investiga.
+  6. PRUEBA: usa un prefijo NO declarado (<xyz:dato/>). Anota el error.
+
+ AUTOCOMPROBACIÓN
+  [ ] Sin errores rojos
+  [ ] Sé explicar a qué namespace pertenece cada elemento de mi documento
+  [ ] Sé por qué el PDF dice que el espacio por defecto "no afecta a los atributos"
+=====================================================================
+-->

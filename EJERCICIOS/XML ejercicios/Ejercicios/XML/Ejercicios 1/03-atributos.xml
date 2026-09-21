@@ -1,0 +1,29 @@
+<!--
+=====================================================================
+ 03 · ATRIBUTOS
+=====================================================================
+ RECUERDA
+  - Atributo = nombre="valor", dentro de la etiqueta de APERTURA.
+  - El valor SIEMPRE entre comillas.
+  - Un elemento NO puede repetir un atributo; el orden de los atributos
+    no importa (el de los elementos sí).
+  - Atributos = metadatos. Elementos = contenido/datos.
+
+ TU TURNO
+  1. Crea <persona> con el atributo DNI y dentro <nombre> y <apellido>.
+  2. Crea una <biblioteca> con 3 <libro>. Cada libro lleva:
+       - atributo id (1, 2, 3) e idioma
+       - elementos <titulo> y <autor>
+  3. Repite el punto 2 pasando el idioma a ELEMENTO. Escribe una línea
+     en comentario: ¿cuál de las dos versiones te parece mejor y por qué?
+  4. PRUEBA (y anota el mensaje de error):
+       a) <libro id=1>          (sin comillas)
+       b) <libro id="1" id="2"> (atributo repetido)
+       c) Mezclar comillas: <libro id="1'>
+
+ AUTOCOMPROBACIÓN
+  [ ] Todos los valores de atributo van entrecomillados
+  [ ] Sin atributos repetidos
+  [ ] Sé decir cuándo prefiero atributo y cuándo elemento
+=====================================================================
+-->

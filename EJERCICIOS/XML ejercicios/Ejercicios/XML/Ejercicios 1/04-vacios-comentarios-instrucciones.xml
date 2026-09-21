@@ -1,0 +1,28 @@
+<!--
+=====================================================================
+ 04 · ELEMENTOS VACÍOS, COMENTARIOS E INSTRUCCIONES DE PROCESAMIENTO
+=====================================================================
+ RECUERDA
+  - Elemento vacío: <etiqueta />  (se abre y cierra a la vez, con o sin atributos)
+  - Comentario: se abre con "<!" seguido de dos guiones y se cierra con dos
+    guiones seguidos de ">" (¡investiga la sintaxis exacta!). Dentro no puede
+    haber dos guiones seguidos.
+  - Instrucción de procesamiento: empieza por <? y acaba en ?>
+
+ TU TURNO
+  1. Crea un <menu> con 3 <plato>. Cada plato tiene <nombre> y un elemento
+     vacío <vegetariano /> solo en los platos que lo sean.
+  2. Crea un elemento vacío con atributos: <imagen src="..." alt="..." />
+  3. Comenta cada sección del documento con un comentario que explique qué es.
+  4. Añade, justo después de la declaración, una instrucción de procesamiento
+     para asociar una hoja de estilo (investiga cómo se escribe:
+     "xml-stylesheet").
+  5. PRUEBA: ¿qué pasa si escribes dos guiones seguidos dentro de un comentario?
+     ¿y si el comentario va ANTES de la declaración <?xml ...?>?
+
+ AUTOCOMPROBACIÓN
+  [ ] Al menos un elemento vacío sin atributos y otro con atributos
+  [ ] Comentarios bien cerrados
+  [ ] La declaración sigue siendo lo primero del archivo
+=====================================================================
+-->

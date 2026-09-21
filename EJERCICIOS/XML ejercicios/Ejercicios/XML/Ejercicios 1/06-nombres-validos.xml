@@ -1,0 +1,38 @@
+<!--
+=====================================================================
+ 06 · NOMBRES VÁLIDOS DE ELEMENTOS Y ATRIBUTOS
+=====================================================================
+ RECUERDA (según el PDF)
+  - Deben empezar por letra o guion bajo.
+  - Sin espacios.
+  - Los que empiezan por "xml" (en cualquier combinación de may/min) están reservados.
+  - Se aplica igual a atributos.
+
+ PARTE A · PREDICE. Escribe ✅ o ❌ al lado de cada nombre SIN probarlo:
+
+    libro ......... 
+    _id ........... 
+    precio-unitario  
+    precio.unitario  
+    2ndo .......... 
+    mi libro ...... 
+    XMLdatos ...... 
+    xmlnodo ....... 
+    número ........ 
+    a,b ........... 
+    a:b ........... 
+
+ PARTE B · COMPRUEBA. Crea un documento con raíz <pruebas> y dentro
+   un elemento por cada nombre de la lista (por ejemplo <libro>x</libro>).
+   Anota cuáles subraya VS Code y lee el mensaje. ¿Coincide con tu predicción?
+
+ PARTE C · Las mismas pruebas, pero como NOMBRE DE ATRIBUTO
+   (<x libro="1"/>, <x 2ndo="1"/>...). ¿Cambia algo?
+
+ AUTOCOMPROBACIÓN
+  [ ] He hecho la predicción ANTES de probar
+  [ ] Sé qué nombres no pasan y por qué
+  [ ] Sé qué caracteres SÍ se permiten después de la primera letra
+      (el PDF y la especificación no coinciden del todo: mira soluciones.md)
+=====================================================================
+-->

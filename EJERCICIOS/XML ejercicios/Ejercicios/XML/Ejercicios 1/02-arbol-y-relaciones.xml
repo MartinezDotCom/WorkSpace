@@ -1,0 +1,54 @@
+<!--
+=====================================================================
+ 02 · DEL ÁRBOL AL XML Y DEL XML AL ÁRBOL
+=====================================================================
+ RECUERDA
+  - Un XML es un ÁRBOL: raíz -> hijos -> nietos...
+  - PADRE/HIJO: directamente conectados. HERMANOS: mismo padre.
+  - DESCENDIENTES: todo lo que cuelga (directa o indirectamente).
+  - ASCENDIENTES: todos los antecesores hasta la raíz.
+
+ PARTE A · Escribe el XML que corresponde a este árbol
+ (invéntate los textos de las hojas):
+
+     instituto
+     ├── nombre
+     ├── ciclos
+     │   ├── ciclo
+     │   │   ├── siglas
+     │   │   └── duracion
+     │   └── ciclo
+     │       ├── siglas
+     │       └── duracion
+     └── direccion
+         ├── calle
+         └── ciudad
+
+ PARTE B · Mira el XML de abajo (ya escrito) y CONTESTA en los huecos:
+
+     <academia>
+        <curso>
+           <titulo>XML</titulo>
+           <horas>40</horas>
+        </curso>
+        <profesor>
+           <nombre>Eva</nombre>
+        </profesor>
+     </academia>
+
+   1. Elemento raíz: ...........
+   2. Padre de <horas>: ...........
+   3. Hermanos de <curso>: ...........
+   4. Descendientes de <academia> (todos): ...........
+   5. Ascendientes de <nombre>: ...........
+   6. Hermano de <titulo>: ...........
+
+ PARTE C · Dibuja tú en un comentario el árbol de esto (ASCII con ├── └──):
+     <coche><motor><cilindros>4</cilindros></motor><ruedas><rueda/><rueda/></ruedas></coche>
+
+ AUTOCOMPROBACIÓN
+  [ ] La parte A no tiene errores rojos
+  [ ] He rellenado B y C ANTES de mirar soluciones.md
+  [ ] Sé distinguir "hijo" de "descendiente"
+=====================================================================
+-->

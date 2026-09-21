@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+=====================================================================
+ 07 · BIEN FORMADO: CORRIGE Y ROMPE
+=====================================================================
+ RECUERDA
+  - Bien formado = un raíz + todo cerrado + bien anidado + atributos con
+    comillas + sin caracteres reservados sueltos + mayúsculas coherentes.
+  - El parser suele avisar del PRIMER error: corrige y vuelve a mirar.
+
+ PARTE A · CORRIGE. El documento de abajo tiene 5 errores.
+   Encuéntralos y arréglalos uno a uno, anotando en un comentario
+   qué error era cada uno.
+
+ PARTE B · ROMPE. Copia un documento pequeño que funcione (el tuyo del
+   ejercicio 1) en un archivo NUEVO y provoca, de uno en uno, estos errores.
+   Anota el mensaje que da VS Code:
+     1. Quita una etiqueta de cierre
+     2. Cambia una mayúscula en el cierre
+     3. Cruza dos etiquetas (<a><b></a></b>)
+     4. Pon un & suelto
+     5. Quita las comillas de un atributo
+     6. Pon dos raíces
+     7. Pon un espacio ANTES de <?xml ...?>
+
+ AUTOCOMPROBACIÓN
+  [ ] La parte A queda sin errores
+  [ ] He anotado los 7 mensajes de la parte B
+  [ ] Puedo explicar con mis palabras "bien anidado"
+=====================================================================
+-->
+<agenda>
+    <contacto id=1>
+        <nombre>Marta</nombre>
+        <email>marta@ejemplo.com<email>
+        <nota>Le gusta el té & el café</nota>
+    </contacto>
+    <Contacto id="2">
+        <nombre>Pau</nombre>
+        <telefono>600 111 222
+    </contacto>
+</agenda>

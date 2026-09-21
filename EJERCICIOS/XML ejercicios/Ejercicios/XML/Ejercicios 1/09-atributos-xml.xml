@@ -1,0 +1,25 @@
+<!--
+=====================================================================
+ 09 · ATRIBUTOS ESPECIALES xml:space, xml:lang, xml:base
+=====================================================================
+ RECUERDA
+  - xml:space  → si la aplicación debe respetar los espacios en blanco.
+  - xml:lang   → idioma del contenido (es, en, ca, en-US...).
+  - xml:base   → URI base distinta a la del documento.
+  - No hay que declararlos: el prefijo xml está predefinido.
+
+ TU TURNO
+  1. Crea un <documento> con xml:lang="es" y dentro una <cita xml:lang="en">
+     con una frase en inglés.
+  2. Añade un <parrafo> con texto que tenga espacios múltiples y
+     usa xml:space. Investiga qué valores admite.
+  3. Añade xml:base en el raíz con una URL y un elemento <enlace href="...">
+     con una ruta RELATIVA. ¿Qué URL completa representa?
+  4. Escribe en un comentario para qué usarías cada uno en un proyecto real.
+
+ AUTOCOMPROBACIÓN
+  [ ] Sin errores rojos
+  [ ] Sé qué valores admite xml:space
+  [ ] Sé dar un caso de uso real de cada atributo
+=====================================================================
+-->
