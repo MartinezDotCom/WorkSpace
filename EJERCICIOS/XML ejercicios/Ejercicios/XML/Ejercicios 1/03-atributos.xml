@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 =====================================================================
  03 · ATRIBUTOS
@@ -27,3 +28,15 @@
   [ ] Sé decir cuándo prefiero atributo y cuándo elemento
 =====================================================================
 -->
+<Persona>
+    <DNI>123456789M</DNI>
+       <Nombre>Marc</Nombre>
+       <Apellido>Martínez</Apellido>
+</Persona>
+<!--
+<biblioteca>
+    <libro id="1" elemento="es"></libro>
+    <libro id="2" elemento="en"></libro>
+    <libro id="3" elemento="fr"></libro>
+</biblioteca>
+--> 
