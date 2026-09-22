@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 =====================================================================
  02 · DEL ÁRBOL AL XML Y DEL XML AL ÁRBOL
@@ -36,15 +37,24 @@
         </profesor>
      </academia>
 
-   1. Elemento raíz: ...........
-   2. Padre de <horas>: ...........
-   3. Hermanos de <curso>: ...........
-   4. Descendientes de <academia> (todos): ...........
-   5. Ascendientes de <nombre>: ...........
-   6. Hermano de <titulo>: ...........
+   1. Elemento raíz: Academia
+   2. Padre de <horas>: Ciclos
+   3. Hermanos de <curso>: Profesor
+   4. Descendientes de <academia> (todos): NOMBRE, Ciclos, Titulo, Horas, Profesor, Nombre.
+   5. Ascendientes de <nombre>: Profesor, Acadeima
+   6. Hermano de <titulo>: Horas
 
  PARTE C · Dibuja tú en un comentario el árbol de esto (ASCII con ├── └──):
      <coche><motor><cilindros>4</cilindros></motor><ruedas><rueda/><rueda/></ruedas></coche>
+<coche>
+   <motor>
+      <cilindros>4</cilindros>
+   </motor>
+   <ruedas>
+      <rueda/>
+      <rueda/>
+   </ruedas>
+</coche>
 
  AUTOCOMPROBACIÓN
   [ ] La parte A no tiene errores rojos
@@ -52,3 +62,13 @@
   [ ] Sé distinguir "hijo" de "descendiente"
 =====================================================================
 -->
+<Academia>
+   <NOMBRE>Ucademi</NOMBRE>
+   <Ciclos>Grado Superior de Formación Profesional de Desarrollo de Aplicaciones Web (DAW).
+      <Titulo>Introducción a XML</Titulo>
+      <Horas>40</Horas>
+   </Ciclos>
+   <Profesor>
+         <Nombre>Juan Ramón Carlos</Nombre>
+   </Profesor>
+</Academia>
