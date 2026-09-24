@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 =====================================================================
  05 · ENTIDADES PREDEFINIDAS Y CDATA
@@ -26,3 +27,26 @@
   [ ] Sé por qué &nbsp; da error (y qué otra cosa podría usar)
 =====================================================================
 -->
+<respuestas>
+   1:
+      <entidad1> &amp; </entidad1>
+      <entidad2> &lt; </entidad2>
+      <entidad3> &gt; </entidad3>
+      <entidad4> &quot; </entidad4>
+      <entidad5> &apos; </entidad5>
+
+   2:
+      <formula>5 &lt; 10 &amp;&amp; 10 &gt; 5</formula>
+      <formula><![CDATA[5 < 10 && 10 > 5]]></formula>
+
+   3:
+      <html>
+         <p>Hola</p>
+      </html>   
+
+   4: 
+      <&nbso;p;>  <!-- ERROR: "The entity "&nbsp;" was referenced, but not declared." -->
+   
+   5:
+    <CDATA><![CDATA[Aqui puedo escribit o que qiera y como quiera > < & " ' ]]></CDATA>
+</respuestas>

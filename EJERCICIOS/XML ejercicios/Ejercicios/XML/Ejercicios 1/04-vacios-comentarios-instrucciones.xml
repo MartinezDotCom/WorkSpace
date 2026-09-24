@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="style.css" ?>
 <!--
 =====================================================================
  04 · ELEMENTOS VACÍOS, COMENTARIOS E INSTRUCCIONES DE PROCESAMIENTO
@@ -18,7 +20,9 @@
      para asociar una hoja de estilo (investiga cómo se escribe:
      "xml-stylesheet").
   5. PRUEBA: ¿qué pasa si escribes dos guiones seguidos dentro de un comentario?
+  - Sale Error: "The string "" is not allowed in comments. Use "" inside comments only to separate comment text from the comment end delimiter."
      ¿y si el comentario va ANTES de la declaración <?xml ...?>?
+  - Sale Error: "XML declaration allowed only at the start of the document"
 
  AUTOCOMPROBACIÓN
   [ ] Al menos un elemento vacío sin atributos y otro con atributos
@@ -26,3 +30,23 @@
   [ ] La declaración sigue siendo lo primero del archivo
 =====================================================================
 -->
+<menu>
+<!-- Aquí tenemos nuestro menu de practica con cada plato descristo y acompañado de una imagen-->
+   <plato>
+      <!-- Aquí podemos ver en Falafel hecho a mano por nuestro gran cocinero -->
+      <nombre>Falafel</nombre>
+      <vegetariano/>
+      <imagen src="Falafel.jpg" alt="Falafel con salsa de youghurt"/>
+   </plato>
+   <plato>
+      <!-- A continuación el papas fritas , unas patatas sabrosas y saladitas acompañadas con un poco de nuestro ketchup especial-->
+      <nombre>Patatas fritas</nombre>
+      <vegetariano/>
+      <imagen src="Patatasfritas.png" alt="Patatas fritas con ketchup"/>
+   </plato>
+   <plato>
+      <!-- Por finalizar tenemos nuestra Ensalada Cesar con pollo que es lo mejor de la Carta-->
+      <nombre>Ensalada César</nombre>
+      <imagen src="EnsaladaCesar.jpg" alt="Ensalada César con pollo"/>
+   </plato>
+</menu>
